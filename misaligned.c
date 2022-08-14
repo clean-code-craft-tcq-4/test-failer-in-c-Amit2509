@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
+#include <cstring>
 const int MAX_COLORPAIR_NAME_CHARS = 16;
 char* colorMap[25];
 
@@ -19,9 +20,8 @@ int printColorMap() {
 }
 
 int main() {
-    int result = printColorMap();
     assert(strcmp(colorMap[1], "| White | Blue") == 0);
-    assert(colorMap[2] == "| White | Orange");
+    assert(strcmp(colorMap[2], "| White | Orange") == 0);
     printf("All is well (maybe!)\n");
     return 0;
 }
