@@ -4,7 +4,7 @@
 const int MAX_COLORPAIR_NAME_CHARS = 16;
 char* colorMap[25];
 
-int printColorMap() {
+void printColorMap() {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
     const char* minorColor[] = {"Blue", "Orange", "Green", "Brown", "Slate"};
     int i = 0, j = 0;
@@ -16,12 +16,13 @@ int printColorMap() {
             printf("%d | %s\n", i * 5 + j, colorMap[i * 5 + j] );
         }
     }
-    return i * j;
+    return;
 }
 
 int main() {
-    int result = printColorMap();
-    assert(result == 25);
+    printColorMap();
+    int result = strcmp(colorMap[1], "White | Blue");
+    assert(result == 1);
     //assert(strcmp(colorMap[1], "White | Blue") == 0);
     //assert(strcmp(colorMap[2], "| White | Orange") == 0);
     printf("All is well (maybe!)\n");
