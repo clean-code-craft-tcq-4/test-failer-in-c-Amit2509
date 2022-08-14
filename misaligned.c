@@ -22,7 +22,7 @@ void printColorMap() {
 int main() {
     printColorMap();
     int result = strcmp(colorMap[1], "White | Blue");
-    assert(result == 1);
+    assert(result == 0);
     //assert(strcmp(colorMap[1], "White | Blue") == 0);
     //assert(strcmp(colorMap[2], "| White | Orange") == 0);
     printf("All is well (maybe!)\n");
