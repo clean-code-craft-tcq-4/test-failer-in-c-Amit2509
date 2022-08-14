@@ -20,8 +20,9 @@ int printColorMap() {
 }
 
 int main() {
-    printColorMap();
-    assert(strcmp(colorMap[1], "| White | Blue") == 0);
+    int result = printColorMap();
+    assert(result == 25);
+    assert(strcmp(colorMap[1], "White | Blue") == 0);
     //assert(strcmp(colorMap[2], "| White | Orange") == 0);
     printf("All is well (maybe!)\n");
     return 0;
