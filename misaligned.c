@@ -22,7 +22,7 @@ void printColorMap() {
 int main() {
     printColorMap();
     char buffer[MAX_COLORPAIR_NAME_CHARS];
-    sprintf(buffer, "%s | %s", "White | Blue");
+    sprintf(buffer, "%s | %s", "White", "Blue");
     int result = strcmp(colorMap[1], buffer);
     assert(result == 0);
     //assert(strcmp(colorMap[1], "White | Blue") == 0);
