@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <assert.h>
 #include <string.h>
-char* colorMapMajor[25] = {};
-char* colorMapMinor[25] = {};
+const char* colorMapMajor[25] = {};
+const char* colorMapMinor[25] = {};
 
 void printColorMap() {
     const char* majorColor[] = {"White", "Red", "Black", "Yellow", "Violet"};
