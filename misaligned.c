@@ -11,8 +11,8 @@ void printColorMap() {
     for(i = 0; i < 5; i++) {
         for(j = 0; j < 5; j++) {
             colorMapMajor[i * 5 + j] = majorColor[i];
-            colorMapMinor[i * 5 + j] = minorColor[i];
-            printf("%d | %s | %s\n", i * 5 + j, colorMapMajor[i * 5 + j], colorMapMinor[i * 5 + j] );
+            colorMapMinor[i * 5 + j] = minorColor[j];
+            printf("%d | %s | %s\n", i * 5 + j + 1, colorMapMajor[i * 5 + j], colorMapMinor[i * 5 + j] );
         }
     }
     return;
