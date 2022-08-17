@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <assert.h>
+#include "network_alert_stub.h"
 #include "alerter.h"
 int alertFailureCount = 0;
 
