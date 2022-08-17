@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "network_alert_stub.h"
 
 int networkAlertStub(float celcius) {
